@@ -1,0 +1,306 @@
+diff a/NavTransition/Base.lproj/Main.storyboard b/NavTransition/Base.lproj/Main.storyboard	(rejected hunks)
+@@ -866,7 +867,7 @@
+                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                         <subviews>
+-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-Kv-JJC">
++                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-Kv-JJC">
+                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                 <items>
+                                     <barButtonItem image="menu" id="Q19-uq-H07">
+@@ -878,7 +879,7 @@
+                                     <barButtonItem title="BP Timer" style="plain" id="tEp-QD-6FZ"/>
+                                 </items>
+                             </toolbar>
+-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-dD-Wpk">
++                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-dD-Wpk">
+                                 <rect key="frame" x="91" y="246" width="193" height="58"/>
+                                 <constraints>
+                                     <constraint firstAttribute="height" constant="58" id="TwQ-fL-we0"/>
+@@ -888,7 +889,7 @@
+                                 <color key="textColor" red="0.18823529410000001" green="0.51372549020000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                 <nil key="highlightedColor"/>
+                             </label>
+-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6f-9i-2cG">
++                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6f-9i-2cG">
+                                 <rect key="frame" x="86" y="175" width="203" height="200"/>
+                                 <constraints>
+                                     <constraint firstAttribute="width" constant="203" id="Ae0-F6-Ooh"/>
+@@ -902,7 +903,7 @@
+                                     <action selector="buttonPressed:" destination="j8N-Ry-bEP" eventType="touchUpInside" id="ezz-Hu-6Q5"/>
+                                 </connections>
+                             </button>
+-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BP Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypd-Ah-rGR">
++                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BP Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypd-Ah-rGR">
+                                 <rect key="frame" x="90" y="66" width="194" height="53"/>
+                                 <constraints>
+                                     <constraint firstAttribute="height" constant="53" id="VMJ-2z-mGG"/>
+@@ -911,7 +912,7 @@
+                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                 <nil key="highlightedColor"/>
+                             </label>
+-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-2Z-gka">
++                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-2Z-gka">
+                                 <rect key="frame" x="102" y="386" width="60" height="60"/>
+                                 <constraints>
+                                     <constraint firstAttribute="width" constant="60" id="IKv-zq-Wio"/>
+@@ -925,7 +926,7 @@
+                                     <action selector="startPressed:" destination="j8N-Ry-bEP" eventType="touchUpInside" id="cKw-zh-wb2"/>
+                                 </connections>
+                             </button>
+-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faq-kc-Nww">
++                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faq-kc-Nww">
+                                 <rect key="frame" x="182" y="406" width="11" height="21"/>
+                                 <constraints>
+                                     <constraint firstAttribute="width" constant="11" id="Gli-zR-Xna"/>
+@@ -934,7 +935,7 @@
+                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                 <nil key="highlightedColor"/>
+                             </label>
+-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9y-dd-P2J">
++                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9y-dd-P2J">
+                                 <rect key="frame" x="213" y="385" width="60" height="60"/>
+                                 <constraints>
+                                     <constraint firstAttribute="width" constant="60" id="TBK-bp-RWk"/>
+@@ -950,7 +951,7 @@
+                                     <action selector="resetPressed:" destination="j8N-Ry-bEP" eventType="touchUpInside" id="hTH-o4-Qwp"/>
+                                 </connections>
+                             </button>
+-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-Be-Mko">
++                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-Be-Mko">
+                                 <rect key="frame" x="58" y="542" width="259" height="29"/>
+                                 <constraints>
+                                     <constraint firstAttribute="height" constant="28" id="RxG-Vu-vn3"/>
+@@ -1080,14 +1081,230 @@
+             </objects>
+             <point key="canvasLocation" x="3060" y="499.875"/>
+         </scene>
++        <!--New Debate Round-->
++        <scene sceneID="3c7-ah-QJg">
++            <objects>
++                <tableViewController id="fEO-A1-0eq" customClass="DebateDetailsTableViewController" customModule="NavTransition" customModuleProvider="target" sceneMemberID="viewController">
++                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="40" sectionHeaderHeight="10" sectionFooterHeight="10" id="0pd-1v-0Pz">
++                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
++                        <sections>
++                            <tableViewSection headerTitle="General" id="ZYV-ni-oSP">
++                                <cells>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="SdA-CB-S4X">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SdA-CB-S4X" id="KtX-Sz-QV9">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T20-Xi-gut">
++                                                    <rect key="frame" x="16" y="5" width="359" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="CMT-xh-ksy">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CMT-xh-ksy" id="ORS-dC-DFr">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Partner" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqv-En-tYN">
++                                                    <rect key="frame" x="16" y="5" width="359" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="IEz-i3-ISg">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IEz-i3-ISg" id="bV7-3f-Yrn">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Motion" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQo-af-fYW">
++                                                    <rect key="frame" x="17" y="5" width="358" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="FGp-Gk-XTS">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FGp-Gk-XTS" id="03P-pt-pUq">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Format" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-vU-giq">
++                                                    <rect key="frame" x="17" y="5" width="358" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
++                                                </textField>
++                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="07Y-2J-biL">
++                                                    <rect key="frame" x="258" y="6" width="109" height="29"/>
++                                                    <segments>
++                                                        <segment title="APDA"/>
++                                                        <segment title="BP"/>
++                                                    </segments>
++                                                    <connections>
++                                                        <action selector="didChangeFormat:" destination="fEO-A1-0eq" eventType="valueChanged" id="qmQ-d2-56Q"/>
++                                                    </connections>
++                                                </segmentedControl>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                </cells>
++                            </tableViewSection>
++                            <tableViewSection headerTitle="Results" id="7AT-U1-KGS">
++                                <cells>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="91b-nN-kiu">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="91b-nN-kiu" id="leJ-v7-86U">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Score (You)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ls-q5-RO0">
++                                                    <rect key="frame" x="15" y="5" width="360" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="E7s-Qo-8n9">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E7s-Qo-8n9" id="imV-Yx-AWH">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Score (Partner)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuO-d3-AwI">
++                                                    <rect key="frame" x="15" y="5" width="360" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Pbm-d6-QXj">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pbm-d6-QXj" id="SbF-wL-sBj">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Result" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rlp-AM-RTJ">
++                                                    <rect key="frame" x="17" y="5" width="358" height="30"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
++                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
++                                                </textField>
++                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vfs-PP-Q1y">
++                                                    <rect key="frame" x="258" y="6" width="109" height="29"/>
++                                                    <segments>
++                                                        <segment title="Win"/>
++                                                        <segment title="Loss"/>
++                                                    </segments>
++                                                    <connections>
++                                                        <action selector="didChangeResult:" destination="fEO-A1-0eq" eventType="valueChanged" id="Qai-I8-UJs"/>
++                                                    </connections>
++                                                </segmentedControl>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                </cells>
++                            </tableViewSection>
++                            <tableViewSection headerTitle="Comments" id="cc8-WW-588">
++                                <cells>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="3Rm-1k-T61">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Rm-1k-T61" id="QT0-WN-XVl">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Comments" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJu-pN-rIQ">
++                                                    <rect key="frame" x="14" y="7" width="361" height="104.5"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                                    <textInputTraits key="textInputTraits"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                </cells>
++                            </tableViewSection>
++                            <tableViewSection headerTitle="Tags" id="6Hx-E3-ygx">
++                                <cells>
++                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="40" id="TEP-4P-IMU">
++                                        <autoresizingMask key="autoresizingMask"/>
++                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TEP-4P-IMU" id="KOm-pN-3Hi">
++                                            <autoresizingMask key="autoresizingMask"/>
++                                            <subviews>
++                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Tags" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-vt-Wbe">
++                                                    <rect key="frame" x="14" y="7" width="361" height="104.5"/>
++                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
++                                                    <textInputTraits key="textInputTraits"/>
++                                                </textField>
++                                            </subviews>
++                                        </tableViewCellContentView>
++                                    </tableViewCell>
++                                </cells>
++                            </tableViewSection>
++                        </sections>
++                        <connections>
++                            <outlet property="dataSource" destination="fEO-A1-0eq" id="nKH-lN-VZl"/>
++                            <outlet property="delegate" destination="fEO-A1-0eq" id="goU-a2-tG2"/>
++                        </connections>
++                    </tableView>
++                    <navigationItem key="navigationItem" title="New Debate Round" id="StA-l4-ySz">
++                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="I9h-U0-f93">
++                            <connections>
++                                <segue destination="tUH-pa-4Mm" kind="unwind" unwindAction="cancelToDebatesViewController:" id="xx4-1D-Nbh"/>
++                            </connections>
++                        </barButtonItem>
++                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="ND4-HO-4HM">
++                            <connections>
++                                <segue destination="tUH-pa-4Mm" kind="unwind" identifier="SaveDebateDetail" unwindAction="saveDebateDetail:" id="HaW-Ga-khD"/>
++                            </connections>
++                        </barButtonItem>
++                    </navigationItem>
++                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
++                    <connections>
++                        <outlet property="commentsTextField" destination="UJu-pN-rIQ" id="6zH-GD-XzQ"/>
++                        <outlet property="formatSegmentedControl" destination="07Y-2J-biL" id="WQw-rm-cZE"/>
++                        <outlet property="motionTextField" destination="MQo-af-fYW" id="Lco-NR-0gq"/>
++                        <outlet property="nameTextField" destination="T20-Xi-gut" id="0xi-bS-Xpa"/>
++                        <outlet property="partnerTextField" destination="dqv-En-tYN" id="VzA-Y4-uo2"/>
++                        <outlet property="resultSegmentedControl" destination="vfs-PP-Q1y" id="Iv4-mQ-3MW"/>
++                        <outlet property="scorePartnerTextField" destination="KuO-d3-AwI" id="SHW-eB-wAf"/>
++                        <outlet property="scoreUserTextField" destination="1ls-q5-RO0" id="WDI-t0-HBT"/>
++                    </connections>
++                </tableViewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="wPZ-Rp-379" userLabel="First Responder" sceneMemberID="firstResponder"/>
++                <exit id="tUH-pa-4Mm" userLabel="Exit" sceneMemberID="exit"/>
++            </objects>
++            <point key="canvasLocation" x="2262.5" y="2108.5"/>
++        </scene>
++        <!--Navigation Controller-->
++        <scene sceneID="C2m-sk-dKg">
++            <objects>
++                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tH7-jf-zL7" sceneMemberID="viewController">
++                    <toolbarItems/>
++                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
++                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GgH-I7-a9g">
++                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
++                        <autoresizingMask key="autoresizingMask"/>
++                    </navigationBar>
++                    <nil name="viewControllers"/>
++                    <connections>
++                        <segue destination="fEO-A1-0eq" kind="relationship" relationship="rootViewController" id="yqo-9D-Lhh"/>
++                    </connections>
++                </navigationController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="moq-lO-jBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="1804" y="2109"/>
++        </scene>
+     </scenes>
+     <resources>
+         <image name="menu" width="22" height="22"/>
+     </resources>
+     <inferredMetricsTieBreakers>
+-        <segue reference="KTs-RG-3p3"/>
+-        <segue reference="dNv-uk-rSi"/>
++        <segue reference="pHW-ci-NqU"/>
+         <segue reference="mv1-0n-plu"/>
++        <segue reference="dNv-uk-rSi"/>
+         <segue reference="7PK-Aa-3Pd"/>
+     </inferredMetricsTieBreakers>
+ </document>

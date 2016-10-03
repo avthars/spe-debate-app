@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RecordedAudio" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="associatedRound" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Round" inverseName="associatedAudio" inverseEntity="Round" syncable="YES"/>
+    </entity>
+    <entity name="Round" syncable="YES">
+        <attribute name="format" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="motion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partner" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordingDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recordingTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="result" optional="YES" attributeType="Boolean" minValueString="0" maxValueString="4" syncable="YES"/>
+        <attribute name="scorePartner" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="scoreUser" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="tag1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tournament" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="associatedAudio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecordedAudio" inverseName="associatedRound" inverseEntity="RecordedAudio" syncable="YES"/>
+        <relationship name="tournamentRoundRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tournament" inverseName="tournamentRoundRelationship" inverseEntity="Tournament" syncable="YES"/>
+    </entity>
+    <entity name="Tournament" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tournamentRoundRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Round" inverseName="tournamentRoundRelationship" inverseEntity="Round" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RecordedAudio" positionX="-74" positionY="-108" width="128" height="103"/>
+        <element name="Round" positionX="108" positionY="-186" width="128" height="270"/>
+        <element name="Tournament" positionX="297" positionY="-18" width="128" height="73"/>
+    </elements>
+</model>

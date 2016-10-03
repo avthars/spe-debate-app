@@ -1,0 +1,87 @@
+diff a/NavTransition/graphData.swift b/NavTransition/graphData.swift	(rejected hunks)
+@@ -22,34 +22,33 @@ class graphData: UIView {
+     //-------FUNCTIONS TO SAVE INPUTTED DATA TO CORE DATA---------
+     
+     //Save tags
+-    func saveTags(tag1 : String, tag2: String, tag3: String){
++    func saveTags(tag1 : String, tag2: String, tag3: String) {
+     
+-    //1 Call app delegate instance + managedObject context
+-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+-    let managedContext = appDelegate.managedObjectContext!
+-    
+-    //2 Get entity = Round
+-    let entity =  NSEntityDescription.entityForName("Round", inManagedObjectContext : managedContext)
+-    
+-    //instance of entity
+-    let round = NSManagedObject(entity: entity!,
+-        insertIntoManagedObjectContext:managedContext)
+-    
+-    //3 Set all values for object
+-    round.setValue(tag1, forKey: "tag1")
+-    round.setValue(tag2, forKey: "tag2")
+-    round.setValue(tag3, forKey: "tag3")
++        //1 Call app delegate instance + managedObject context
++        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
++        let managedContext = appDelegate.managedObjectContext!
+         
++        //2 Get entity = Round
++        let entity =  NSEntityDescription.entityForName("Round", inManagedObjectContext : managedContext)
++        
++        //instance of entity
++        let round = NSManagedObject(entity: entity!, insertIntoManagedObjectContext:managedContext)
++        
++        //3 Set all values for object
++        round.setValue(tag1, forKey: "tag1")
++        round.setValue(tag2, forKey: "tag2")
++        round.setValue(tag3, forKey: "tag3")
++        
++        //4 error
++        var error : NSError?
++        if !managedContext.save(&error) {
++            println("ERROR 1 : Could not save \(error), \(error?.userInfo)")
++        }
+         
+-    //4 error
+-    var error : NSError?
+-    if !managedContext.save(&error) {
+-    println("ERROR 1 : Could not save \(error), \(error?.userInfo)")
+-    }
+     }//end save tags
+     
+     //save Round essentials(format, name, partner, motion)
+-    func saveRound(format : String, name: String, partner : String, motion : String){
++    func saveRound(format : String, name: String, partner : String, motion : String) {
+         
+         //1 Call app delegate instance + managedObject context
+         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+@@ -68,7 +67,6 @@ class graphData: UIView {
+         round.setValue(partner, forKey: "partner")
+         round.setValue(motion, forKey: "motion")
+         
+-        
+         //4 error
+         var error : NSError?
+         if !managedContext.save(&error) {
+@@ -78,7 +76,7 @@ class graphData: UIView {
+     
+     
+     //save Scores (user, partner, result)
+-    func saveResult(scoreUser : Double, scorePartner : Double, roundResult : Int){
++    func saveResult(scoreUser : Double, scorePartner : Double, roundResult : Int) {
+         
+         //1 Call app delegate instance + managedObject context
+         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+@@ -341,12 +334,9 @@ class graphData: UIView {
+             return 0
+         }
+         
+-        
+         let overallSelectionScore = (selectionScore / selectionRounds)
+         
+         return overallSelectionScore
+     }//end mean from selection
+-    
+-    
+ 
+ }
